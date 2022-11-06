@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>weather and city</title>
+    <link href="./dist/output.css" rel="stylesheet">
+    <style>
+        @font-face {
+            src: url("font/Gobold Light.otf");
+            font-family: gobold;
+        }
+        *{
+            font-family: gobold;
+        }
+    </style>
+</head>
+<body class="" style="background-color: #4c5caa" id="main">
+<div class="w-full justify-between flex">
+    <div class="w-1/3 justify-around flex h-24 items-center text-3xl">
+        <p class="cursor-pointer">home</p>
+        <p class="cursor-pointer">about us</p>
+        <p class="cursor-pointer">sign in</p>
+    </div>
+    <div class="w-1/2 justify-between flex h-24">
+        <div class="flex items-center">
+                <input type='search' class="h-12 w-80 outline-none border-none rounded-3xl pl-4 pr-4" placeholder="wirte city name"/>
+        </div>
+        <div class="flex">
+            <img src="images/icon/sun.png" class="w-16 h-16 mr-4 mt-5 ">
+            <p class="relative" style="color: #00aeef;top: 2.55rem;right: 3.4rem">w</p>
+        </div>
+    </div>
+</div>
+<div class="w-4/6 bg-white mt-12 rounded-3xl pb-32 mb-8 ml-60 InformationContainer" style="height: 39rem">
+    <p class="w-full opacity-60 text-4xl text-center pt-12 CityPlace">weather in </p></p>
+    <div class="w-full flex mb-8">
+        <p class="w-1/2 opacity-60 ml-12 pt-12 Path"></p>
+        <div class="w-1/2 opacity-60 justify-end pt-12 flex"><p class="pr-4">local time :</p><p class="Time pr-12"></p></div>
+    </div>
+    <div class="w-full flex mb-8">
+        <div class="w-1/2 opacity-60 ml-12 pt-12 flex "><p class="pr-4">longtude :</p><p class="pr-12 Lat"></p></div>
+        <div class="w-1/2 opacity-60 text-end mr-12 pt-12 flex justify-end"><p class="pr-4">latitude :</p><p class=" Lon"></p></div>
+    </div>
+    <div class="w-full flex mb-8">
+        <div class="w-1/2 opacity-60 ml-12 pt-12 flex "><p class="pr-4">humidity :</p><p class="pr-12 Humidity"></p></div>
+        <div class="w-1/2 opacity-60 mr-12 pt-12 flex justify-end"><p class="pr-4">day :</p><p class=" Day"></p></div>
+    </div>
+    <div class="w-full flex mb-8">
+        <div class="w-1/2 opacity-60 ml-12 pt-12 flex "><p class="pr-4">real feel (celsius) :</p><p class="pr-12 RealFeelCelsius"></p></div>
+        <div class="w-1/2 opacity-60 mr-12 pt-12 flex justify-end"><p class="pr-4">real feel (fahrenheit) :</p><p class=" RealFeelFahrenheit "></p></div>
+    </div>
+    <div class="w-full flex mb-8">
+        <div class="w-1/2 opacity-60 ml-12 pt-12 flex "><p class="pr-4">wind speed (kph) :</p><p class="pr-12 WindSpeedKPH"></p></div>
+        <div class="w-1/2 opacity-60 mr-12 pt-12 flex justify-end"><p class="pr-4">wind speed (mph) :</p><p class="WindSpeedMPH "></p></div>
+    </div>
+        <div class="w-1/2 opacity-60 mr-12 pt-12 flex absolute top-80 flex-col" style="left: 46rem;">
+            <p class="FellText text-3xl mb-8  w-40 text-center relative right-8"></p>
+            <img src="" class="WeatherIcon w-28 h-28 mb-8">
+            <div class="flex justify-around w-40 relative right-4">
+                <p class="WeatherCelTemperature text-2xl"></p>
+                <p class="WeatherFarTemperature text-2xl"></p>
+            </div>
+        </div>
+</div>
+<div class="w-full h-24 flex  items-center justify-around absolute " style="border-top: 1px solid #ADABAB;top: 89%">
+    <p class="text-3xl" style="color: #ADABAB">call us in</p>
+    <div class="flex">
+        <img src="images/icon/telegram.png" class="w-12">
+        <p class="relative top-3 left-8" style="color:#ADABAB;">@world weather</p>
+    </div>
+    <div class="flex">
+        <img src="images/icon/instagram.png" class="w-12">
+        <p class="relative top-3 left-8" style="color:#ADABAB;">world weather</p>
+    </div>
+    <div class="flex">
+        <img src="images/icon/twitter.png" class="w-12">
+        <p class="relative top-3 left-8" style="color:#ADABAB;">@world weather</p>
+    </div>
+</div>
+<script src="weather.js" type="module"></script>
+</body>
+</html>
