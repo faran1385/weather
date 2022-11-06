@@ -10,7 +10,7 @@ class sendTo{
         getStartedBtn.addEventListener('click',this.weatherPage)
     }
     weatherPage(){
-        location.href='http://localhost:63342/Weather%20App/weather.html?_ijt=r7esvr4l2q94e4283m6k5ppcqt&_ij_reload=RELOAD_ON_SAVE'
+        location.href='http://127.0.0.1:5500/weather.html'
     }
 }
 

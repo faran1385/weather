@@ -52,8 +52,8 @@ class getWeather{
     }
 
     changeLocation(){
-        // here send the city that user write in the input to url and we change the page to the main page and script code strat from begin
-        location.href=`http://localhost:63342/Weather%20App/main%20weather.html?_ijt=55qvi3rdk84i3d535ajp9fp5q&_ij_reload=RELOAD_ON_SAVE&city=${searchInput.value}`
+        // here we send the city that user write in the input to url and we change the page to the main page and script code strat from begin
+        location.href=`http://127.0.0.1:5500/main%20weather.html?city=${searchInput.value}`
     }
 
 
